@@ -52,13 +52,16 @@
     "xlsx": "^0.15.1",
     "d3-scale": "^3.2.1",
     "react-simple-maps": "^2.0.0",
-    "react-tooltip": "^4.1.2"
+    "react-tooltip": "^4.1.2",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -77,5 +80,6 @@
   },
   "devDependencies": {
     "eslint-plugin-react-hooks": "^2.2.0"
-  }
+  },
+  "snyk": true
 }
